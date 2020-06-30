@@ -1,0 +1,255 @@
+.main-header .main-menu ul li:hover > a {
+	color: #ff0000!important;
+}
+h1, h2, h3, h3, h4, h5, h6 {
+	text-transform: capitalize !important;
+}
+p {
+	line-height: 25px!important;
+    font-size: 14px!important;
+    color: #262626!important;
+	font-family: "Poppins",sans-serif !important;
+}
+p a {
+	color: #ff0000!important;
+}
+body {
+	background: #ffe600!important;
+}
+.text-bold {
+	font-weight: bold;
+}
+.main-menu{
+	margin-left: 30px;
+}
+.main-header .main-menu ul li a {
+	font-family: "Poppins",sans-serif !important;
+}
+.header-area {
+	background: white!important;
+}
+.header-sticky.sticky-bar.sticky .main-menu ul > li > a {
+	padding: 50px 20px !important;
+}
+.slider-area .hero__caption::before {
+	position: absolute;
+	content: "";
+	background-image:url(../img/hero/hero_circle.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 540px;
+	height: 540px;
+	z-index: -1;
+	-webkit-animation-name: rotateme;
+	animation-name: rotateme;
+	-webkit-animation-duration: 30s;
+	animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+.slider-area .hero__caption .circle-caption p {
+	color: #212529 !important;
+	text-transform: initial;
+	font-size: 23px;
+	font-style: italic;
+	font-weight: bolder;
+}
+.slider-area .hero__caption .circle-caption h1 {
+	font-size: 112px;
+	font-weight: 700;
+	color: #212529 !important;
+	font-family: 'Dancing Script', cursive;
+	line-height: 1.2;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+.slider-area .hero-cap h2 {
+	text-shadow: 2px 2px 2px #000;
+}
+.form-contact .form-control {
+	border: 1px solid #6d6c6c!important;
+}
+.contact-info .media-body p {
+	color: #6d6c6c!important;
+}
+.contact-form .nice-select {
+	color:  #6d6c6c!important;
+	border: 1px solid #6d6c6c!important;
+}
+.contact-form input {
+	color:  #6d6c6c!important;
+	border: 1px solid #6d6c6c!important;
+}
+.contact-form textarea {
+	color:  #000;
+	border: 1px solid #6d6c6c!important;
+}
+.boxed-btn:hover {
+	background: #ff0000!important;
+	color: #fff !important;
+	border: 1px solid #ff0000!important;
+}
+.boxed-btn {
+	background: transparent;
+	color: #800098 !important;
+}
+.sargam_contact{
+	background: #ffe600!important;
+}
+.section-padding2 {
+	padding-top: 60px !important;
+	padding-bottom: 80px !important;
+}
+.info-right{
+	padding-top: 60px!important;
+}
+.contact-section {
+	padding: 60px 0 100px!important;
+}
+.slider-height2 {
+	min-height: 250px!important;
+}
+.ttmc_logo {
+	display: inline-block;
+	padding: 35px 0;
+}
+.f-right.ttmc_logo img {
+	width: 200px;
+}
+
+.slider-area .hero__caption::before {
+	animation-name: none!important;
+}
+.slick-next::before, .slick-prev::before {
+	font-size: 20px;
+	line-height: 1;
+	opacity: .75;
+	color: #000 !important;
+}
+.social-icons a i {
+	color: #fff !important;
+	background: #8a8a8a;
+	padding: 7px;
+	border-radius: 50%;
+}
+.social-icons {
+	margin-top: 20px;
+}
+
+.social-icons a i:hover {
+	background: #ff0000;
+}
+#scrollUp {
+	background: #ff0000;
+
+}
+/*--------------sargam footrt ------------------*/
+.footer-copy-right.text-center {
+	display: flex;
+	justify-content: center !important;
+}
+.footer-copy-right p {
+	padding: 20px;
+}
+/*--------------sargam product page ------------------*/
+
+.border_right{
+	border-right: 1px dotted;
+}
+.single-product {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+.product-img.f-left {
+	width: 50%;
+}
+.story-imges {
+	width: 100%;
+	height: auto;
+}
+.product-desc{
+	padding: 0 20px;
+	width: 50%;
+}
+.product-desc p{
+	text-align: justify;
+}
+.story1, .story2 {
+	line-height: 25px;
+	font-size: 14px;
+	color: #262626;
+}
+.story-padding {
+	padding-top: 60px!important;
+}
+
+.btn2 {
+	background: #008837 !important;
+}
+.btn2::before {
+	background: #ff0000;
+
+}
+.retail-location {
+	display: flex;
+	line-height: 38px;
+	margin-bottom: 70px;
+	flex-flow: row;
+	justify-content: center;
+}
+.nice-select .option {
+	color: #2f2f2f !important;
+	font-family: "Poppins",sans-serif !important;
+}
+.location_drop {
+	margin-left: 20px;
+}
+.purchage-area{
+	background:white;
+}
+.retail_wrapper{
+	background: none;
+}
+.product-img img {
+	width: 100%;
+}
+.brand-area{
+	background: white;
+}
+.product-img {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.purchase-tittle h2 {
+	margin-bottom: 20px !important;
+	font-size: 40px;
+	font-weight: 700;
+}
+.product-caption h4 {
+	font-size: 22px;
+	padding: 10px 0;
+}
+.location p {
+	padding: 10px 0;
+}
+.location h5 {
+	font-size: 22px;
+}
+.location ul li {
+	margin: 10px 0;
+}
+.product-caption {
+	top: -15px;
+	position: relative;
+}
+.single-brand.product {
+	margin-left: 45px;
+}
+.single-brand.product img {
+	width: 100%;
+}

@@ -1,8 +1,15 @@
+.active a{
+	color: #ff0000 !important;
+	text-decoration: none;
+}
 .main-header .main-menu ul li:hover > a {
-	color: #ff0000!important;
+	color: #ff0000 !important;
+	text-decoration: none;
 }
 h1, h2, h3, h3, h4, h5, h6 {
 	text-transform: capitalize !important;
+	font-family: "Playfair Display",serif!important;
+color: #362d2b!important;
 }
 p {
 	line-height: 25px!important;
@@ -52,7 +59,7 @@ body {
 .slider-area .hero__caption .circle-caption p {
 	color: #212529 !important;
 	text-transform: initial;
-	font-size: 23px;
+	font-size: 23px !important;
 	font-style: italic;
 	font-weight: bolder;
 }
@@ -60,13 +67,14 @@ body {
 	font-size: 112px;
 	font-weight: 700;
 	color: #212529 !important;
-	font-family: 'Dancing Script', cursive;
+	font-family: 'Dancing Script', cursive !important;
 	line-height: 1.2;
 	text-transform: capitalize;
 	margin-bottom: 30px;
 }
 .slider-area .hero-cap h2 {
 	text-shadow: 2px 2px 2px #000;
+	color: #fff !important;
 }
 .form-contact .form-control {
 	border: 1px solid #6d6c6c!important;
@@ -252,4 +260,14 @@ body {
 }
 .single-brand.product img {
 	width: 100%;
+}
+.online-store-logo {
+	display: inline-flex;
+	justify-content: center;
+}
+.single-store {
+	margin: 20px;
+}
+b, strong {
+	font-weight: bolder !important;
 }

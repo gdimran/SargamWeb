@@ -38,6 +38,7 @@ global $sargam_theme;
 
 
 <script>
+
  $(document).ready(function(){
 	 $("select").change(function(){
 		 $(this).find("option:selected").each(function(){

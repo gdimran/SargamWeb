@@ -62,6 +62,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
             $defaults = array(
                 'show' => array(
                     'title' => true,
+                    'subtitle' => true,
                     'description' => true,
                     'url' => true,
                 ),
@@ -88,6 +89,7 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
 
                     $defaults = array(
                         'title' => '',
+                        'subtitle' => '',
                         'description' => '',
                         'sort' => '',
                         'url' => '',
@@ -145,6 +147,11 @@ if ( !class_exists ( 'ReduxFramework_slides' ) ) {
                     $placeholder = ( isset ( $this->field[ 'placeholder' ][ 'title' ] ) ) ? esc_attr ( $this->field[ 'placeholder' ][ 'title' ] ) : __ ( 'Title', 'redux-framework' );
                     echo '<li><input type="' . $title_type . '" id="' . $this->field[ 'id' ] . '-title_' . $x . '" name="' . $this->field[ 'name' ] . '[' . $x . '][title]' . $this->field['name_suffix'] . '" value="' . esc_attr ( $slide[ 'title' ] ) . '" placeholder="' . $placeholder . '" class="full-text slide-title" /></li>';
 
+                    if ( $this->field[ 'show' ][ 'subtitle' ] ) {
+                        $title_type = "text";
+                    } else {
+                        $title_type = "hidden";
+                    }
                     $placeholder = ( isset ( $this->field[ 'placeholder' ][ 'subtitle' ] ) ) ? esc_attr ( $this->field[ 'placeholder' ][ 'subtitle' ] ) : __ ( 'Sub Title', 'redux-framework' );
                     echo '<li><input type="' . $title_type . '" id="' . $this->field[ 'id' ] . '-subtitle_' . $x . '" name="' . $this->field[ 'name' ] . '[' . $x . '][subtitle]' . $this->field['name_suffix'] . '" value="' . esc_attr ( $slide[ 'subtitle' ] ) . '" placeholder="' . $placeholder . '" class="full-text slide-subtitle" /></li>';
 

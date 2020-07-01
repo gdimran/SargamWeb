@@ -63,7 +63,7 @@
 																?>
                             </div>
 												<div class="f-right ttmc_logo">
-													<a href="<?php echo $sargam_theme['header-logo-url'];?>"><img src="<?php echo $sargam_theme['header-logo-right']['url'];?>"></a>
+													<a href="<?php echo $sargam_theme['header-logo-url'];?>" target="_blank"><img src="<?php echo $sargam_theme['header-logo-right']['url'];?>"></a>
 												</div>
                         </div>
                         <!-- Mobile Menu -->

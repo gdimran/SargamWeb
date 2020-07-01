@@ -7,26 +7,242 @@
 
 /* Normal desktop :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
+  .logo img {
+  	width: 100%;
+  }
+  .header-sticky.sticky-bar.sticky .main-menu ul > li > a {
+	padding: 50px 15px !important;
+}
+.main-header .main-menu ul li a {
+	padding: 50px 15px!important;
+}
+.ttmc_logo {
+	padding: 45px 0;
+}
+  .f-right.ttmc_logo img {
+	width: 150px;
+}
+.slider-area .hero__caption .circle-caption {
+	margin: 0 auto !important;
+	padding-left: 0 !important;
+}
+.slider-area .hero__caption .circle-caption h1 {
+	margin-bottom: 17px;
+}
+.slider-area .hero__caption .circle-caption p {
+	font-size: 21px !important;
+}
+.slider-area .hero__caption::before {
+	width: 500px;
+	height: 500px;
+}
+.slider-area .hero__caption.caption-bg {
+	height: 500px;
+	width: 500px;
+}
 
 
 }
 
- 
+
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-
-
+  .logo img {
+      width: 120px;
+  }
+  .ttmc_logo {
+  	display: inline-block;
+  	padding: 40px 0;
+  	position: absolute;
+  	top: -56px;
+  	right: 85px;
+  }
+  .header-area .slicknav_btn {
+  	top: -60px;
+  }
+  .slicknav_nav {
+  	margin-top: 5px;
+  }
+  .header-sticky ul li a {
+  	padding: 10px 19px;
+  	font-family: "Poppins",sans-serif !important;
+  }
+  .slider-area .hero__caption::before {
+  	width: 440px;
+  	height: 440px;
+  }
+  .slider-area .hero__caption.caption-bg {
+    width: 440px;
+  	height: 440px;
+  }
+  .slider-area .hero__caption .circle-caption h1 {
+	font-size: 100px;
+	margin-bottom: 13px;
+}
+  .slider-area .hero__caption .circle-caption p {
+	font-size: 20px !important;
+}
+.slider-area .hero__caption .circle-caption {
+	padding-left: 75px!important;
+}
+.border_right {
+	border-right: none;
+}
+  .footer-bottom-area .footer-border {
+	padding: 20px 0px 20px;
+}
 }
 
- 
+
 /* small mobile :320px. */
 @media (max-width: 767px) {
 
- 
+
 }
- 
+
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-.container {width:450px}
- 
+  .logo img {
+  	width: 110px;
+  }
+  .ttmc_logo {
+    display: inline-block;
+    padding: 40px 0;
+    position: absolute;
+    top: -100px;
+    right: 85px;
+  }
+  .header-area .slicknav_btn {
+    top: -60px;
+  }
+  .slicknav_nav {
+    margin-top: 5px;
+  }
+  .header-sticky ul li a {
+  	padding: 10px 19px;
+  	font-family: "Poppins",sans-serif !important;
+  }
+  .slider-area .hero__caption::before {
+    width: 340px;
+    height: 340px;
+  }
+  .slider-area .hero__caption.caption-bg {
+    width: 340px;
+    height: 340px;
+  }
+  .slider-area .hero__caption .circle-caption h1 {
+  font-size: 75px;
+  margin-bottom: 10px;
+}
+  .slider-area .hero__caption .circle-caption p {
+  font-size: 16px !important;
+}
+.slider-area .hero__caption .circle-caption {
+  margin: 0 auto;
+  padding-left: 0!important;
+}
+.slider-area .hero-cap h2 {
+	font-size: 38px;
+}
+.product-img img {
+	position: relative;
+	top: 25%;
+}
+.slick-next {
+	right: 0!important;
+}
+.slick-prev {
+	left: 0!important;
+	z-index: 999!important;
+}
+.border_right {
+  border-right: none;
+}
+  .footer-bottom-area .footer-border {
+  padding: 20px 0px 20px;
+}
+
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) and (-webkit-min-device-pixel-ratio: 1),
+@media only screen and (min-device-width: 320px) and (max-device-width: 479px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo img {
+    width: 95px;
+  }
+  .f-right.ttmc_logo img {
+	width: 125px;
+}
+  .ttmc_logo {
+    display: inline-block;
+    padding: 40px 0;
+    position: absolute;
+    top: -90px;
+    right: 64px;
+  }
+  .header-area .slicknav_btn {
+    top: -60px;
+  }
+  .slicknav_nav {
+    margin-top: 5px;
+  }
+  .header-sticky ul li a {
+    padding: 10px 19px;
+    font-family: "Poppins",sans-serif !important;
+  }
+  .slider-height {
+	height: 300px;
+}
+  .slider-area .hero__caption::before {
+    width: 240px;
+    height: 240px;
+  }
+  .slider-area .hero__caption.caption-bg {
+    width: 240px;
+    height: 240px;
+  }
+  .slider-area .hero__caption .circle-caption h1 {
+  font-size: 55px;
+  margin-bottom: 5px;
+  }
+  .slider-area .hero__caption .circle-caption p {
+  font-size: 11px !important;
+  }
+  .slider-area .hero__caption .circle-caption {
+  margin: 0 auto;
+  padding-left: 0!important;
+  }
+  .slider-area .hero-cap h2 {
+  font-size: 38px;
+  }
+  .product-img img {
+  position: relative;
+  top: 25%;
+  }
+  .slick-next {
+  right: 0!important;
+  }
+  .slick-prev {
+  left: 0!important;
+  z-index: 999!important;
+  }
+  .single-store img {
+	width: 120px;
+}
+.single-store {
+	margin: 10px;
+}
+.slick-slide {
+	position: relative;
+	right: -72px;
+}
+  .border_right {
+  border-right: none;
+  }
+  .footer-copy-right.text-center {
+	display: flex;
+	justify-content: center !important;
+	flex-flow: column;
+}
+  .footer-bottom-area .footer-border {
+  padding: 10px 0px 10px;
+  }
 }

@@ -6,7 +6,7 @@
  *
  * @package Sargam
  */
-
+global $sargam_theme;
 get_header();
 ?>
 
@@ -14,12 +14,12 @@ get_header();
 		<!-- slider Area Start-->
 		<div class="slider-area ">
 				<!-- Mobile Menu -->
-				<div class="single-slider slider-height2  hero-overly d-flex align-items-center" data-background="<?php echo get_theme_file_uri( '/assets/img/hero/purchage_hero.jpg');?>">
+				<div class="single-slider slider-height2  hero-overly d-flex align-items-center" data-background="<?php echo $sargam_theme['banner-purchase-page']['url'];//echo get_theme_file_uri( '/assets/img/hero/purchage_hero.jpg');?>">
 						<div class="container">
 								<div class="row">
 										<div class="col-xl-12">
 												<div class="hero-cap text-center">
-														<h2>Make a Purchase</h2>
+														<h2><?php echo $sargam_theme['banner-title-purchase-page'];?></h2>
 												</div>
 										</div>
 								</div>
@@ -36,23 +36,27 @@ get_header();
 				<!-- section tittle -->
 				<div class="col-lg-12">
 					<div class="purchase-tittle text-center">
-						<img src="<?php echo get_theme_file_uri( '/assets/img/memories/section_tittle_flowre.png');?>" alt="">
-						<h2>Online Store</h2>
-						<p class="text-center"><span class="text-bold">Sargam</span> products can be purchased through online retailers from their websites. Currently Sargam partners with <a href="https://deligram.com"  target="_blank">Deligram </a>and <a href="https://www.ghorebazar.com"  target="_blank">Ghore Bazar</a> to ensure our products get to you right at your doorstep. Visit their platforms to order Sargam products today!
-
+						<img src="<?php echo $sargam_theme['store-heading-top-image']['url'];?>" alt="">
+						<h2><?php echo $sargam_theme['online-store-title'];?></h2>
+						<p class="text-center"><span class="text-bold">
+							<?php echo $sargam_theme['opt-online-store-desc'];?>
 						</p>
 						<hr>
 					</div>
-						<div class="col-lg-6 f-left text-right mb-100">
-							<a href="https://deligram.com"  target="_blank">
-								<img src="<?php echo get_theme_file_uri( '/assets/img/service/deligram.jpg');?>">
-							</a>
-						</div>
-						<div class="col-lg-6 f-right mb-100">
-							<a href="https://www.ghorebazar.com"  target="_blank">
-								<img src="<?php echo get_theme_file_uri( '/assets/img/service/gblogo.jpg');?>">
-							</a>
-						</div>
+					<div class="col-lg-12 online-store-logo">
+							<?php
+							 $storeSlider = $sargam_theme['online-store-slider'];
+							 foreach ($storeSlider as $store) {?>
+								 <div class="f-left mb-100 single-store">
+ 									<a href="<?php echo $store['url'];?>"  target="_blank">
+ 										<img src="<?php echo $store['image'];?>">
+ 									</a>
+ 								</div>
+							<?php
+								}
+							 ?>
+					</div>
+
 
 				</div>
 
@@ -66,29 +70,27 @@ get_header();
 						<img src="<?php echo get_theme_file_uri( '/assets/img/our_story/shape_right.png');?>" class="flower2 " alt="">
 				</div>
 		</div>
-<div class="retail_wrapper Our-story-area story-padding">
+<div id="retail_shop" class="retail_wrapper Our-story-area story-padding">
 	<div class="container">
 		<div class="row">
 				<!-- section tittle -->
 				<div class="col-lg-12">
 					<div class="purchase-tittle text-center">
-						<img src="<?php echo get_theme_file_uri( '/assets/img/memories/section_tittle_flowre.png');?>" alt="">
-						<h2>Our retail shops</h2>
+						<img src="<?php echo $sargam_theme['retail-heading-top-image']['url'];?>" alt="">
+						<h2><?php echo $sargam_theme['retail-shops-title'];?></h2>
 					</div>
 				</div>
 
 				<div class="col-lg-12">
-					<p class="text-center"><span class="text-bold">Sargam</span> products can be found in convenience stores and retail chains in Dhaka, Chottogram, and Sylhet. Find a retail store close to your location using the dropdown list below, so that you can find our products at your convenience.<br><br>
-
-					We currently partner with Shwapno and Meena Bazar, providing them our products centrally, so that they can get them to you all across Bangladesh. Can’t find Sargam Paan Massalas and Mouth Fresheners at your local Shwapno and Meena Bazar store? Feel free to inform the store manager of your interest in our product so they can ensure their shelves are stocked with enough Sargam for your satisfaction.
-
+					<p class="text-center">
+						<?php echo $sargam_theme['opt-retail-shops-desc'];?>
 					</p>
 					<hr>
 				</div>
 
 				<div class="col-lg-12">
 					<div class="retail-location">
-						<p class="text-bold">Select your desire store location from the dropdown options:</p>
+						<p class="text-bold"><?php echo $sargam_theme['retail-locDropdown-lable'];?></p>
 						<?php
 						global $post;
 
@@ -112,7 +114,6 @@ get_header();
 					</div>
 				</div>
 
-
 				<?php if ( $the_query->have_posts() ) { ?>
 				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 						<div class="col-lg-12 <?php the_title(); ?> box location">
@@ -135,50 +136,31 @@ get_header();
 						 <div class="row ">
 								<div class="col-lg-12">
 										<div class="purchase-tittle text-center">
-												<img src="<?php echo get_theme_file_uri( '/assets/img/memories/section_tittle_flowre.png');?>" alt="">
-												<h2>Our Partners</h2>
-													<p>At Sargam we value our partners who have been crucial to helping us supply our unique Paan Massalas and Mouth Fresheners across Bangladesh to our cherished customers. They share in our success and make us stronger together. Check them below and find Sargam products through them!</p>
+												<img src="<?php echo $sargam_theme['partners-heading-top-image']['url'];?>" alt="">
+												<h2><?php echo $sargam_theme['partners-title'];?></h2>
+													<p><?php echo $sargam_theme['opt-partners-before-desc'];?></p>
 											<hr>
 										</div>
 								</div>
 						</div>
 	<div class="slider slider-nav">
-			<div class="single-brand">
-				<a href="https://www.shwapno.com/" target="_blank">
-						<img src="<?php echo get_theme_file_uri( '/assets/img/service/shopno.jpg');?>" alt="">
-				</a>
-			</div>
-			<div class="single-brand">
-				<a href="https://www.lazzpharma.com/" target="_blank">
-					<img src="<?php echo get_theme_file_uri( '/assets/img/service/lpz.jpg');?>" alt="">
-				</a>
-			</div>
-			<div class="single-brand">
-				<a href="https://agorasuperstores.com/" target="_blank">
-					<img src="<?php echo get_theme_file_uri( '/assets/img/service/agora.jpg');?>" alt="">
-				</a>
-			</div>
-			<div class="single-brand">
-				<a href="https://deligram.com"  target="_blank">
-					<img src="<?php echo get_theme_file_uri( '/assets/img/service/deligram.jpg');?>">
-				</a>
-			</div>
-			<div class="single-brand">
-				<a href="https://www.ghorebazar.com"  target="_blank">
-					<img src="<?php echo get_theme_file_uri( '/assets/img/service/gblogo.jpg');?>">
-				</a>
-			</div>
-			<div class="single-brand">
-				<a href="https://meenaclick.com" target="_blank">
-					<img src="<?php echo get_theme_file_uri( '/assets/img/service/menabazar.jpg');?>" alt="">
-				</a>
-			</div>
+		<?php
+		 $partnerSlider = $sargam_theme['partners-slider'];
+		 foreach ($partnerSlider as $partner) {?>
+			 <div class="single-brand">
+ 				<a href="<?php echo $partner['url'];?>" target="_blank">
+ 						<img src="<?php echo $partner['image'];?>" alt="">
+ 				</a>
+ 			</div>
+		<?php
+			}
+		 ?>
+
 	</div>
 		<div class="row">
 			<div class="col-lg-12">
-				<p class="text-center">If you’re a retailer or store owner who wants to partner with Sargam to sell our mouthwatering products, <a href="www.ttmcbd.com/contact-us/" target="_blank">get in touch with us</a>, we welcome all new opportunities!<br>
-
-				We also provide special prices and packages for corporate clients purchasing products in bulk, and clients purchasing gift packages. Contact us to find out more!
+				<p class="text-center">
+					<?php echo $sargam_theme['opt-partners-after-desc'];?>
 				</p>
 			</div>
 		</div>

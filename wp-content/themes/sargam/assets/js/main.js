@@ -1,6 +1,6 @@
 (function ($)
   { "use strict"
-  
+
 /* 1. Proloder */
     $(window).on('load', function () {
       $('#preloader-active').delay(450).fadeOut('slow');
@@ -217,8 +217,8 @@
     new WOW().init();
 
 /* 11. Datepicker */
-    
-// 11. ---- Mailchimp js --------//  
+
+// 11. ---- Mailchimp js --------//
     function mailChimp() {
       $('#mc_embed_signup').find('form').ajaxChimp();
     }
@@ -235,7 +235,7 @@
           }
         });
       }
-//Another popUp     
+//Another popUp
       var popUp = $('.menorie-icon');
       if(popUp.length){
         popUp.magnificPopup({
@@ -245,7 +245,7 @@
           }
         });
       }
-// 
+//
 //Brand Active slider our partners
   $('.slider-nav').slick({
    slidesToShow: 5,
@@ -255,9 +255,51 @@
    focusOnSelect: true,
     speed: 300,
     autoplay:true,
-    speed: 1000
+    speed: 1000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow:1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
  });
-   
+
    //Brand Active slider our partners
   $('.slider-nav-product').slick({
    slidesToShow: 1,
@@ -269,7 +311,7 @@
     autoplay:true,
     speed: 1000
  });
-   
+
 //Brand Active
   $('.brand-active').slick({
     dots: false,
@@ -295,6 +337,13 @@
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
         }
       },
       {
